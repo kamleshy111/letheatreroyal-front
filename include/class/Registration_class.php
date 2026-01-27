@@ -183,6 +183,11 @@ class Registration {
 		return $obj;
 	}
 
+	// Simple formatter compatible with PHP 7+ (money_format is removed in PHP 8).
+	private static function formatAmount($value) {
+		return number_format((float) $value, 2, ".", "");
+	}
+
 	public static function getRegistrationTotal($data) {
 		$total        = 0;
 		$totalDayCare = 0;
@@ -241,11 +246,24 @@ class Registration {
 		$pst                         += round(($subtotal * PSTRATE), 2);
 		$tax                         = ($gst + $pst);
 		$total                       = ($subtotal + $gst + $pst);
-		$monthlySubTotal             = ($subtotal / $nbPayment);
+		$monthlySubTotal             = ($nbPayment > 0) ? ($subtotal / $nbPayment) : 0;
 		$monthlyGst                  = round(($monthlySubTotal * GSTRATE), 2);
 		$monthlyPst                  = round(($monthlySubTotal * PSTRATE), 2);
 		$monthlyTotal                = ($monthlySubTotal + $monthlyGst + $monthlyPst);
-		$_SESSION["transactionData"] = array("subtotal" => money_format("%.2n", $subtotal), "gst" => money_format("%.2n", $gst), "pst" => money_format("%.2n", $pst), "tax" => money_format("%.2n", $tax), "total" => money_format("%.2n", $total), "transactionAmount" => number_format($total, 2, ".", ""), "firstDate" => $firstDate, "monthlySubTotal" => money_format("%.2n", $monthlySubTotal), "monthlyGst" => money_format("%.2n", $monthlyGst), "monthlyPst" => money_format("%.2n", $monthlyPst), "monthlyPayment" => money_format("%.2n", $monthlyTotal), "nbPayment" => $nbPayment);
+		$_SESSION["transactionData"] = array(
+			"subtotal"         => self::formatAmount($subtotal),
+			"gst"              => self::formatAmount($gst),
+			"pst"              => self::formatAmount($pst),
+			"tax"              => self::formatAmount($tax),
+			"total"            => self::formatAmount($total),
+			"transactionAmount"=> self::formatAmount($total),
+			"firstDate"        => $firstDate,
+			"monthlySubTotal"  => self::formatAmount($monthlySubTotal),
+			"monthlyGst"       => self::formatAmount($monthlyGst),
+			"monthlyPst"       => self::formatAmount($monthlyPst),
+			"monthlyPayment"   => self::formatAmount($monthlyTotal),
+			"nbPayment"        => $nbPayment
+		);
 
 		fwrite($fp, "\n" . $firstDate . "\n" . print_r($_SESSION, true));
 		fclose($fp);
