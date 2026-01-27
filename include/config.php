@@ -2,6 +2,9 @@
 
 require_once("path.php");
 
+// Load .env variables early so they are available everywhere.
+require_once(__DIR__ . "/env.php");
+
 if (!defined('INCLUDE_PATH')) {
     define('INCLUDE_PATH', __DIR__); // fallback if path.php doesn't define it
 }
