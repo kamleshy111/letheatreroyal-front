@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <page>
+        <pageActive>Y</pageActive>
+        <menuPosition>main</menuPosition>
+        <pageid>team</pageid>
+        <pageFr>equipe</pageFr>
+        <pageTitleFr>Équipe</pageTitleFr>
+    </page>
+    <page>
+        <pageActive>Y</pageActive>
+        <menuPosition>main</menuPosition>
+        <pageid>ca</pageid>
+        <pageFr>c-a</pageFr>
+        <pageTitleFr>Conseil d'administration</pageTitleFr>
+    </page>
+    <page>
+        <pageActive>Y</pageActive>
+        <menuPosition>main</menuPosition>
+        <pageid>partner</pageid>
+        <pageFr>partenaires</pageFr>
+        <pageTitleFr>Partenaires</pageTitleFr>
+    </page>
+    <page>
+        <pageActive>Y</pageActive>
+        <menuPosition>main</menuPosition>
+        <pageid>about</pageid>
+        <pageFr>a-propos</pageFr>
+        <pageTitleFr>À propos</pageTitleFr>
+    </page>
+    <page>
+        <pageActive>Y</pageActive>
+        <menuPosition>main</menuPosition>
+        <pageid>service</pageid>
+        <pageFr>services</pageFr>
+        <pageTitleFr>Services</pageTitleFr>
+    </page>
+    <page>
+        <pageActive>Y</pageActive>
+        <menuPosition>main</menuPosition>
+        <pageid>registration</pageid>
+        <pageFr>inscription</pageFr>
+        <pageTitleFr>Inscription</pageTitleFr>
+    </page>
+    <page>
+        <pageActive>Y</pageActive>
+        <menuPosition>main</menuPosition>
+        <pageid>contact</pageid>
+        <pageFr>nous-joindre</pageFr>
+        <pageTitleFr>Nous joindre</pageTitleFr>
+    </page>
+</root>

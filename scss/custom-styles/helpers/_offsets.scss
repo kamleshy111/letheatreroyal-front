@@ -1,0 +1,167 @@
+/*
+*
+* Offsets
+* --------------------------------------------------
+*/
+
+// Element offset
+* + p { margin-top: 20px; }
+* + hr { margin-top: 10px; }
+p + p { margin-top: 24px; }
+
+
+// Headings
+h3 + * {
+  margin-top: 35px;
+}
+
+h1 + h2 { margin-top: 32px; }
+h2 + h3 { margin-top: 32px; }
+h3 + h4 { margin-top: 32px; }
+h4 + h5 { margin-top: 40px; }
+h5 + h6 { margin-top: 40px; }
+
+
+// Headings + Paragraph
+h1 + p { margin-top: 5px; }
+h2 + p { margin-top: 20px; }
+h3 + p { margin-top: 20px; }
+h4 + p { margin-top: 20px; }
+h5 + p { margin-top: 20px; }
+h6 + p { margin-top: 20px; }
+
+
+// Paragraph + Headings
+p + h2 { margin-top: 45px; }
+p + h3 { margin-top: 45px; }
+p + h4 { margin-top: 45px; }
+p + h5 { margin-top: 45px; }
+p + h6 { margin-top: 45px; }
+
+
+// Tags + Tags
+img + p { margin-top: 15px; }
+h3 + img { margin-top: 42px; }
+h3 + hr { margin-top: 15px; }
+
+
+// Tags + Classes
+p + .list-marked { margin-top: 10px; }
+p + .marked-list { margin-top: 15px; }
+p + .ordered-list { margin-top: 15px; }
+h4 + .box-comment { margin-top: 40px; }
+h3 + .divider { margin-top: 25px; }
+p + .group { margin-top: 15px; }
+hr + .list { margin-top: 25px; }
+.list + h4 { margin-top: 30px; }
+
+
+// Classes
+* + .rd-mailform { margin-top: 30px; }
+* + .list-desc { margin-top: 15px; }
+* + .list-unstyled { margin-top: 23px; }
+* + .group-xl { margin-top: 45px; }
+* + .group-sm { margin-top: 45px; }
+* + .quote-default { margin-top: 45px; }
+* + .quote-secondary { margin-top: 45px; }
+* + .rd-search-results { margin-top: 45px; }
+* + .services-single-box { margin-top: 35px; }
+* + .button { margin-top: 25px; }
+* + .isotope-wrap { margin-top: 35px; }
+.quote-secondary + * { margin-top: 45px; }
+.aside-title + * { margin-top: 22px; }
+.extra-large + * { margin-top: 30px; }
+
+
+// Classes + Tags
+.range + h3 { margin-top: 80px; }
+.subtitle + h3 { margin-top: 15px; }
+.quote-default + p { margin-top: 30px; }
+.range + hr { margin-top: 20px; }
+
+
+// Classes + Classes
+.shell + .shell { margin-top: 60px; }
+.range + .range { margin-top: 60px; }
+
+
+// Media offsets
+
+@media (min-width: $screen-sm-min) {
+  // Classes
+  * + .button { margin-top: 40px; }
+
+  // Tags + Classes
+  p + .group { margin-top: 25px; }
+}
+
+@media (min-width: $screen-md-min) {
+  * + .isotope-wrap { margin-top: 50px; }
+  .list + h4 { margin-top: 60px; }
+}
+
+@media (min-width: $screen-lg-min) {
+
+}
+
+.inset-left-25 {
+  padding-left: 25px;
+}
+
+
+html {
+  // Range spacing
+  
+  .range-75,
+  .range-90 {
+    @include responsive-offset(50px);
+  }
+  
+  .range-60 {
+    @include responsive-offset(60px);
+  }
+
+  .range-50 {
+    @include responsive-offset(50px);
+  }
+  
+  .range-40 {
+    @include responsive-offset(40px);
+  }
+  
+  .range-30 {
+    @include responsive-offset(30px);
+  }
+
+  .range-15 {
+    @include responsive-offset(15px);
+  }
+  .range-0 {
+    @include responsive-offset(0);
+  }
+  
+  .spacing-20 {
+    @include responsive-offset(20px);
+  }
+
+  @media (min-width: $screen-md-min) {
+    .range-md-30 {
+      @include responsive-offset-media(30px);
+    }
+    .range-75 {
+      @include responsive-offset(75px);
+    }
+    .range-90 {
+      @include responsive-offset(90px);
+    }
+  }
+}
+
+.range.spacing-20 {
+  margin-left: -5px;
+  margin-right: -5px;
+  [class*='cell'] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

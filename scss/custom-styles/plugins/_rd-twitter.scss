@@ -1,0 +1,51 @@
+//
+// Twitter Feed
+// --------------------------------------------------
+
+.twitter {
+  .twitter-date {
+    &:before {
+      margin-right: 6px;
+      font-family: "FontAwesome";
+      font-size: 18px;
+      content: '\f099';
+      color: $primary;
+    }
+    .icon{
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+
+  .twitter-name > a {
+    margin-top: 8px;
+    margin-bottom: 0;
+    color: $primary;
+    font-size: 16px;
+    font-weight: 700;
+
+    &:before {
+      content: '- ';
+    }
+  }
+  
+  .twitter-name {
+    margin-top: 15px;
+  }
+
+  .twitter-text {
+    color: $gray-darker;
+    
+    a {
+      color: $primary;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .twitter-sm + .twitter-sm {
+    margin-top: 28px;
+  }
+}

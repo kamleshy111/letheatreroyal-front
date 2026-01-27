@@ -1,0 +1,105 @@
+/*
+*
+* Icons
+* --------------------------------------------------
+*/
+
+
+// Base styles
+// --------------------------------------------------
+
+.icon {
+  display: inline-block;
+  line-height: 24px;
+
+  &:before {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    font-style: normal;
+    speak: none;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+
+// Alternate icons
+// --------------------------------------------------
+
+.icon-default {
+
+}
+
+.icon-primary {
+  color: $primary;
+}
+
+.icon-secondary {
+  color: $secondary;
+}
+
+.icon-gray-3 {
+  color: $gray-3;
+}
+
+.icon-gray-8 {
+  color: $gray-8;
+}
+
+.icon-gray-12 {
+  color: $gray-12;
+}
+
+.icon-white {
+  color: $white;  
+}
+
+.page {
+
+  a {
+    &.icon-gray-3 { @include link($gray-3, $primary) }
+    &.icon-gray-8 { @include link($gray-8, $primary) }
+    &.icon-gray-12 { @include link($gray-12, $secondary) } 
+    &.icon-white { @include link($white, $secondary) }    
+    &.icon-primary { @include link($primary, $secondary) }    
+    &.icon-secondary-5 { @include link($secondary-5, $primary) }    
+  }
+  
+}
+
+
+// Icon Shapes
+// --------------------------------------------------
+
+.icon-circle{
+  border-radius: 50%;
+}
+
+
+// Icon Sizes
+// --------------------------------------------------
+
+.page {
+  .icon {
+    font-size: 24px;
+  }
+  
+  .icon-xs {
+    font-size: 15px;
+  }
+
+  .icon-sm {
+    font-size: 20px;
+  }
+  
+  .icon-md {
+    font-size: 42px; 
+  }
+
+  .icon-lg {
+    font-size: 44px;
+    line-height: 1;
+  }
+}

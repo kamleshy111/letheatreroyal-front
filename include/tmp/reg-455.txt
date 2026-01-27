@@ -1,0 +1,91 @@
+2026-01-13 22:42:05
+
+455
+
+Array
+(
+    [c] => 1
+    [type] => theaterschool
+    [firstname] => Thomas
+    [lastname] => Knap
+    [birthdate] => 2008-02-25
+    [school] => des Rives
+    [fatherFirstname] => Sébastien
+    [fatherLastname] => Knap
+    [motherFirstname] => Geneviève
+    [motherLastname] => Timmons
+    [email] => famille@knap.ca
+    [phone] => 5142252204
+    [emergencyContact] => Patrick Knap
+    [emergencyPhone] => 5141234567
+    [allergies] => Aucunes
+    [heardAbout] => other
+    [amount] => 000
+    [stripeToken] => 
+    [stripeDescription] => 
+    [currency] => CAD
+    [subTotal] => 0.00 $
+    [gst] => 0.00 $
+    [pst] => 0.00 $
+    [total] => 0.00 $
+    [monthlyPayment] => 0.00 $
+    [paymentMode] => bankinfo
+)
+
+
+Registration Object
+(
+    [id] => 455
+    [c] => 1
+    [type] => theaterschool
+    [firstname] => Thomas
+    [lastname] => Knap
+    [birthdate] => 2008-02-25
+    [school] => des Rives
+    [fatherFirstname] => Sébastien
+    [fatherLastname] => Knap
+    [motherFirstname] => Geneviève
+    [motherLastname] => Timmons
+    [email] => famille@knap.ca
+    [phone] => 5142252204
+    [emergencyContact] => Patrick Knap
+    [emergencyPhone] => 5141234567
+    [allergies] => Aucunes
+    [heardAbout] => other
+    [amount] => 000
+    [stripeToken] => 
+    [stripeDescription] => 
+    [currency] => CAD
+    [subTotal] => 0.00 $
+    [gst] => 0.00 $
+    [pst] => 0.00 $
+    [total] => 0.00 $
+    [monthlyPayment] => 0.00 $
+    [paymentMode] => bankinfo
+    [consent] => N
+)
+
+
+Array
+(
+    [language] => fr
+    [expires] => 1768363325
+    [referer] => https://www.bing.com/
+    [transactionData] => Array
+        (
+            [subtotal] => 0,00 $
+            [gst] => 0,00 $
+            [pst] => 0,00 $
+            [tax] => 0,00 $
+            [total] => 0,00 $
+            [transactionAmount] => 0.00
+            [firstDate] => 2036-01-13
+            [monthlySubTotal] => 0,00 $
+            [monthlyGst] => 0,00 $
+            [monthlyPst] => 0,00 $
+            [monthlyPayment] => 0,00 $
+            [nbPayment] => 1
+        )
+
+    [idRegistration] => 455
+)

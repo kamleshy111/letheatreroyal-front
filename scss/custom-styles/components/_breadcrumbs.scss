@@ -1,0 +1,84 @@
+//== Breadcrumbs
+//
+//##
+
+$breadcrumb-padding-vertical:   8px;
+$breadcrumb-padding-horizontal: 15px;
+//** Breadcrumb background color
+$breadcrumb-bg:                 #f5f5f5;
+//** Breadcrumb text color
+$breadcrumb-color:              #ccc;
+//** Text color of current page in the breadcrumb
+$breadcrumb-active-color:       $white;
+//** Textual separator for between breadcrumb elements
+$breadcrumb-separator:          "\f621";
+
+//
+// Breadcrumbs
+// --------------------------------------------------
+.breadcrumbs-custom {
+  margin-top: 15px;
+  position: relative;
+  vertical-align: middle;
+  z-index: 1;
+
+  a {
+    display: inline;
+    vertical-align: middle;
+    &, &:active, &:focus {
+      color: $secondary;
+    }
+  }
+
+  li {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 36px;
+    font-size: 18px;
+  }
+
+  li:after {
+    content: $breadcrumb-separator;
+    position: absolute;
+    top: 53%;
+    right: 9px;
+    display: inline-block;
+    color: rgba($white, .5);
+    font: 400 18px/18px 'Material Design Icons';
+    transform: translateY(-50%);
+  }
+
+  li:last-child {
+    padding-right: 0;
+    &:after {
+      display: none;
+    }
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  a:hover,
+  li.active {
+    color: $breadcrumb-active-color;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .breadcrumbs-custom {
+    li {
+      padding-right: 44px;
+    }
+
+    li:after {
+      right: 13px;
+    }
+  }
+}
+
+.breadcrumbs-01 {
+  background-image: url(../images/breadcrumbs-01.jpg);
+}
+.breadcrumbs-02 {
+  background-image: url(../images/breadcrumbs-02.jpg);
+}

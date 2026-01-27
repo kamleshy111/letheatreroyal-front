@@ -1,0 +1,30 @@
+/*
+*
+* RD Google Map
+* --------------------------------------------------
+*/
+
+$map-height: 200px;
+$map-xs-height: 250px;
+$map-md-height: 450px;
+
+.google-map-markers{
+  display: none;
+}
+
+.google-map-container {
+  width: 100%;
+}
+
+.google-map {
+  height: 250px;
+  width: 100%;
+
+  @media (min-width: $screen-xs-min) {
+    height: $map-xs-height;
+  }
+
+  @media (min-width: $screen-md-min) {
+    height: $map-md-height;
+  }
+}

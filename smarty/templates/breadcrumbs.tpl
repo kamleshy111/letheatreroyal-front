@@ -1,0 +1,13 @@
+<section class="section-md text-center bg-image breadcrumbs-01">
+    <div class="shell shell-fluid">
+        <div class="range range-xs-center">
+            <div class="cell-xs-12 cell-xl-11">
+                <h2 class="text-white">{$breadcrumbTitle}</h2>
+                <ul class="breadcrumbs-custom">
+                    <li><a href="/">Accueil</a></li>
+                    <li class="active">{$breadcrumbTitle}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,200 @@
+/*
+*
+* Contexts
+* --------------------------------------------------
+*/
+
+
+%context-dark {
+  h1, .heading-1, h2, .heading-2, h3, .heading-3, h4, .heading-4, h5, .heading-5, h6, .heading-6, & {
+    color: $white;
+  }
+  
+  // Buttons
+  .button-secondary-outline {
+    @include btn-variant($white, transparent, $secondary, $gray-darker, $white, $white);
+
+    &.button-effect-ujarak { 
+      &:before {
+        background-color: $white;
+      }
+
+      &:after {
+        border: 3px solid $secondary;
+      }
+
+      &:focus,
+      &:active {
+        background: $white;
+        border-color: $white;
+        &:after {
+          border-color: $white;
+        }
+      }
+
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
+
+  color: $white;
+
+  #{headings()}{
+    color: $white;
+  }
+
+  .divider {
+    background-color: $gray-3;
+  }
+
+  .divider-secondary {
+    background-color: $primary;
+  }
+
+  .rd-mailform {
+
+    .form-input,
+    .form-label,
+    .form-label-outside,
+    .form-validation {
+      color: $white;
+    }
+
+    .form-input {
+      background: rgba($white, .47);
+      border: 0;
+    }
+  }
+
+  .form-wrap_icon::before {
+    color: $white;
+  }
+
+  .counter-box {
+    &,
+    .counter-box-header {
+      color: $white;
+    }
+  }
+
+  .counter-box-minimal {
+    .counter,
+    .counter-box-title {
+      color: $white;
+    }
+  }
+
+  .quote-circle {
+    cite,
+    .quote-text,
+    .quote-boxed-meta {
+      color: $white;
+    }
+  }
+
+  .list-nav-marked {
+    > li {
+      color: $white;
+    }
+  }
+
+  .terms-list-inline {
+    dt:after,
+    dd {
+      color: $white;
+    }
+  }
+
+  .link {
+    @include link($white, $primary);
+  }
+
+  .terms-list {
+    dd {
+      color: $white;
+    }
+  }
+
+  .button-gray-dark-outline {
+    @include btn-variant($white, transparent, $white, $gray-darker, $white, $white);
+
+    &.button-effect-ujarak {
+      &:before {
+        background-color: $white;
+      }
+
+      &:after {
+        border: 3px solid $white;
+      }
+
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
+  .box-bordered,
+  .services-box-main-var-1,
+  .services-box-main-var-1-inner {
+    border-color: rgba($white, .22);
+  }
+  // Change color of primary button on primary bg
+  .btn-primary {
+    @include btn-variant($primary, $white, $white, $primary, darken($white, 5%), darken($white, 5%));
+  }
+
+  .select2-container--bootstrap .select2-selection--single .select2-selection__rendered {
+    color: $white;  
+  }
+  
+  .page & {
+    @include text-variant('.text-secondary', $secondary, darken($secondary, 10%));
+  }
+}
+
+.bg-primary {
+  // Lists
+  .list-desc {
+    dt {
+      color: $secondary;
+    }
+  }
+}
+
+.bg-gray-11 {
+  .rd-mailform {
+
+    .form-input {
+      background: $gray-12;
+      border: 0;
+    }
+  }
+  //.select2-container .select2-choice {
+  //  background-color: ;
+  //}
+  .select2-container{
+    .select2-choice {
+      background-color: $gray-12;
+      border: 1px solid $gray-12;
+      color: $white;
+    }
+    &.select2-dropdown-open .select2-choice {
+      border-color: $gray-12;
+    }
+  }
+}
+
+%context-light {
+  h1, .heading-1, h2, .heading-2, h3, .heading-3, h4, .heading-4, h5, .heading-5, h6, .heading-6, &{
+    color: $gray-base;
+  }
+}
+
+
+.context-dark {
+  @extend %context-dark;
+}
+
+.context-light {
+  @extend %context-light;
+}

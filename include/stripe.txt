@@ -1,0 +1,2665 @@
+2022-12-08 13:45:26
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCp62DjRDTuC8hRdCYz8tAH
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCp61DjRDTuC8hRRJ4IWneg
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670525126
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 13:56:25
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCpGeDjRDTuC8hRgOWQhY3K
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCpGeDjRDTuC8hRX7EaSJ2x
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670525784
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 14:04:15
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCpOFDjRDTuC8hRzBbaUIE1
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCpOFDjRDTuC8hRr1Tij7RT
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670526255
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 14:17:30
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCpb4DjRDTuC8hRzylGpHh7
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCpb4DjRDTuC8hRg3J4TCBl
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670527050
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 14:29:09
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCpmLDjRDTuC8hR99jEQJui
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCpmLDjRDTuC8hRYOva5fit
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670527749
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 14:30:07
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCpnHDjRDTuC8hRg3YWdTgN
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCpnHDjRDTuC8hRJj0AOD1X
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670527807
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 14:30:13
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCpnNDjRDTuC8hRCOFZjR84
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCpnMDjRDTuC8hR2ythPBFr
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670527813
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 14:33:30
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCpqYDjRDTuC8hRS7bFCThg
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCpqYDjRDTuC8hR1xUHChn9
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670528010
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 14:35:19
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCpsJDjRDTuC8hRFiCVfJE5
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCpsIDjRDTuC8hREGyOSh1O
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670528119
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 14:42:12
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCpyyDjRDTuC8hRNi05X1Ex
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCpyyDjRDTuC8hRhWSBPTWU
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670528532
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 14:44:31
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCq1DDjRDTuC8hR589GC0K9
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCq1DDjRDTuC8hRxk4QNfiL
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670528671
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 14:45:12
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCq1sDjRDTuC8hRIT3ebUA2
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCq1sDjRDTuC8hRWKLNo97s
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2033
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670528712
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 14:52:35
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCq91DjRDTuC8hRJ09hkgQk
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCq91DjRDTuC8hR0qlQlrn9
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670529155
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 15:00:48
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCqGyDjRDTuC8hRoJtNCQqH
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCqGyDjRDTuC8hRptaiaW9R
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670529648
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 15:08:22
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCqOIDjRDTuC8hR2wO0Q5im
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCqOIDjRDTuC8hRM0hcyP0e
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2033
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670530102
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 15:15:49
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCqVVDjRDTuC8hRutPdpMdl
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCqVUDjRDTuC8hRRKy9WWki
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670530549
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 15:17:07
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCqWlDjRDTuC8hRUwrI3ccr
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCqWlDjRDTuC8hRqSnE1888
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670530627
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 16:42:56
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCrroDjRDTuC8hRYyTsDR28
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCrrnDjRDTuC8hRPIK1hDJO
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670535776
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 16:44:36
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCrtQDjRDTuC8hRryLndnWQ
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCrtQDjRDTuC8hRTJTFJ5GF
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670535876
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 16:45:07
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCrtuDjRDTuC8hRUZGS5HMA
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCrtuDjRDTuC8hRyw9w1gtX
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670535906
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 18:08:14
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCtCMDjRDTuC8hR3tVyiZ08
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCtCMDjRDTuC8hRs5rl8YK6
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J2J 2J2
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670540894
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 18:13:15
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCtHDDjRDTuC8hRm1YzB5aS
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCtHDDjRDTuC8hRpGjBcXvZ
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670541195
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 18:14:15
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCtIBDjRDTuC8hRutrCDkkl
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCtIADjRDTuC8hR3TeHEDIy
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670541255
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 18:16:17
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCtK9DjRDTuC8hR8whaPAlC
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCtK9DjRDTuC8hRUN0HQopu
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670541377
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 18:16:59
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCtKpDjRDTuC8hRqiy7cr4z
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCtKpDjRDTuC8hRM4GwXWhk
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670541419
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 18:19:01
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCtMnDjRDTuC8hRg8lsZQJA
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCtMnDjRDTuC8hR0Dz8VTVL
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670541541
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-08 18:20:16
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MCtO0DjRDTuC8hRWj8mVzNP
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MCtO0DjRDTuC8hRm3L9HBZy
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670541616
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 11:44:26
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MD9gTDjRDTuC8hRgCyckHZv
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MD9gTDjRDTuC8hRSeK8PdIR
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670604265
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 12:30:45
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDAPJDjRDTuC8hR40mB3tZ6
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDAPJDjRDTuC8hRBujmggcX
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2033
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670607045
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 12:37:01
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDAVNDjRDTuC8hRsLPOapfL
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDAVNDjRDTuC8hRROM042SP
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670607421
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 12:39:47
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDAY3DjRDTuC8hRkxSTQqy3
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDAY3DjRDTuC8hRYDoHnCu0
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670607587
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 12:41:17
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDAZVDjRDTuC8hRlbdm8oun
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDAZVDjRDTuC8hRiiQHaeRu
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670607677
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 12:43:41
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDAbpDjRDTuC8hRJC03A2GS
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDAbpDjRDTuC8hRUEZ7FExA
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2033
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670607821
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 12:46:23
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDAeRDjRDTuC8hR3aQAACXa
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDAeRDjRDTuC8hRaHhCPre7
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2033
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670607983
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 12:48:02
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDAg1DjRDTuC8hRQ3hn7k9w
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDAg1DjRDTuC8hRuowPCfek
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 3
+                    [exp_year] => 2033
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670608081
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 12:48:57
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDAgvDjRDTuC8hRRFJJBoeX
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDAgvDjRDTuC8hRxWeZCSA4
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 3
+                    [exp_year] => 2033
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670608137
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 12:51:44
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDAjcDjRDTuC8hRmJQJo9mp
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDAjcDjRDTuC8hR7IZZFezl
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2033
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670608304
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 12:58:24
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDAq4DjRDTuC8hRpfNQbKVH
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDAq4DjRDTuC8hRx4tmVxsP
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670608704
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 13:00:50
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDAsPDjRDTuC8hR7WAgr3F9
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDAsPDjRDTuC8hRwQwMPlYT
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 3
+                    [exp_year] => 2033
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670608849
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 15:56:01
+Array
+(
+    [error] => Array
+        (
+            [code] => incomplete_number
+            [type] => validation_error
+            [message] => Votre numéro de carte est incomplet.
+        )
+
+)
+2022-12-09 15:56:14
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDDcADjRDTuC8hR79qm0Jl6
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDDcADjRDTuC8hRxngkxYKt
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670619374
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 15:56:57
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDDcrDjRDTuC8hRd6wrEkxO
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDDcrDjRDTuC8hRUovVHqDK
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670619417
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 15:57:36
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDDdTDjRDTuC8hR0Rx4p0Ga
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDDdTDjRDTuC8hReDgmBQ3y
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670619455
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 16:02:02
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDDhmDjRDTuC8hRICz3XOEM
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDDhmDjRDTuC8hRfuig8iCk
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670619722
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 16:10:05
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDDpYDjRDTuC8hROQ6BJIjB
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDDpYDjRDTuC8hRxGY7xgYK
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => 33333
+                    [address_zip_check] => unchecked
+                    [brand] => MasterCard
+                    [country] => US
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 4444
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670620204
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 16:22:16
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDE1MDjRDTuC8hRxIzoZE5K
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDE1MDjRDTuC8hRl25dYYgx
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670620936
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 16:31:21
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDEA9DjRDTuC8hRvNpmuRHj
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDEA9DjRDTuC8hRiCndGwlR
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670621481
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 16:32:56
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDEBgDjRDTuC8hReMJDXfuH
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDEBfDjRDTuC8hRTbsMrsPU
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2025
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670621576
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 16:35:59
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDEEdDjRDTuC8hR90C7w5UQ
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDEEdDjRDTuC8hRC10m5X3w
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670621759
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 16:40:09
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDEIfDjRDTuC8hRwmRrpMHC
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDEIfDjRDTuC8hRt9bUG4jo
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2025
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670622009
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 16:41:14
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDEJiDjRDTuC8hRjdkpCBds
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDEJiDjRDTuC8hR9lyzcPKD
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 3
+                    [exp_year] => 2033
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670622074
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 16:42:10
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDEKcDjRDTuC8hReRJbDYom
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDEKcDjRDTuC8hR0AFD8urc
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 1
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670622130
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 17:09:51
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDElPDjRDTuC8hRljoACnV5
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDElPDjRDTuC8hR0t7UEcGp
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670623791
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 17:12:17
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDEnlDjRDTuC8hR457Eu8to
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDEnlDjRDTuC8hR1pMvWO9D
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670623937
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-09 17:17:56
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MDEtEDjRDTuC8hRNDD3eibl
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MDEtEDjRDTuC8hRiGaoY4Os
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1670624276
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-31 09:22:00
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1ML5wiDjRDTuC8hRkRJUAdWN
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1ML5wiDjRDTuC8hRkGEGfgkU
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1672496520
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-31 09:24:27
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1ML5z5DjRDTuC8hRnf8iWBGj
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1ML5z5DjRDTuC8hRbn5HitYS
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1672496667
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-31 09:25:01
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1ML5zdDjRDTuC8hRHWLGf3mg
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1ML5zcDjRDTuC8hRjjaYeqwF
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1672496701
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2022-12-31 09:28:07
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1ML62dDjRDTuC8hRU5icHG1b
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1ML62dDjRDTuC8hRVBH6WRUk
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1672496887
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2023-01-06 18:29:25
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MNPLlDjRDTuC8hR7PRbvnOA
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MNPLlDjRDTuC8hR0gnhAI8i
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1673047765
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2023-01-06 19:05:17
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MNPuTDjRDTuC8hRBo52CHyd
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MNPuSDjRDTuC8hRTZWjhdtG
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => K3J K3J
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1673049917
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2023-01-06 19:05:37
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MNPunDjRDTuC8hR2biFg4Qg
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MNPunDjRDTuC8hRBTKF5kUJ
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => K3J K3J
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1673049937
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2023-01-06 19:08:03
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MNPx9DjRDTuC8hROcPwyfWO
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MNPx9DjRDTuC8hR56pqI5n8
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1673050083
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2023-01-10 08:19:01
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MOhjEDjRDTuC8hRpUyIXBJs
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MOhjEDjRDTuC8hRWTx3vtf6
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2024
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1673356740
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2023-01-10 08:23:38
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MOhnhDjRDTuC8hR4llPyvrJ
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MOhnhDjRDTuC8hRINd1Ev8x
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1673357017
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2023-02-02 09:50:48
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1MX47gDjRDTuC8hRkA3gtAPW
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1MX47gDjRDTuC8hRJwLRBSmM
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1675349448
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2023-02-18 10:08:30
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1Mcs1aDjRDTuC8hREn5pG11L
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1Mcs1aDjRDTuC8hR13ZWQiUB
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2023
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1676732910
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2023-11-17 17:18:19
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1ODaMhDjRDTuC8hREA5vKy1B
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1ODaMhDjRDTuC8hRWZbH75XC
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2024
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                    [wallet] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1700259499
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)
+2023-11-17 17:20:41
+Array
+(
+    [token] => Array
+        (
+            [id] => tok_1ODaOzDjRDTuC8hRt9m7hhXc
+            [object] => token
+            [card] => Array
+                (
+                    [id] => card_1ODaOzDjRDTuC8hRQ7rZEbDx
+                    [object] => card
+                    [address_city] => 
+                    [address_country] => 
+                    [address_line1] => 
+                    [address_line1_check] => 
+                    [address_line2] => 
+                    [address_state] => 
+                    [address_zip] => J3J 3J3
+                    [address_zip_check] => unchecked
+                    [brand] => Visa
+                    [country] => CA
+                    [cvc_check] => unchecked
+                    [dynamic_last4] => 
+                    [exp_month] => 2
+                    [exp_year] => 2024
+                    [funding] => credit
+                    [last4] => 0000
+                    [name] => 
+                    [tokenization_method] => 
+                    [wallet] => 
+                )
+
+            [client_ip] => 69.70.217.78
+            [created] => 1700259641
+            [livemode] => false
+            [type] => card
+            [used] => false
+        )
+
+)

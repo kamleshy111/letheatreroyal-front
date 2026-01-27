@@ -1,0 +1,22 @@
+@import "color";
+//@import "bootstrap/mixins";
+//@import "swiper";
+
+main {
+  section {
+	&.section {
+	  .services-box-modern-caption {
+		top : 80%;
+	  }
+	}
+  }
+}
+
+section#home {
+  h1 {
+	font-size : 1.5rem;
+  }
+  img {
+	max-width : 100%;
+  }
+}

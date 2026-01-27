@@ -1,0 +1,49 @@
+html {
+  &.mobile, &.tablet {
+	header {
+	  nav#mainNav {
+		div.rd-navbar-inner {
+		  div.rd-navbar-panel {
+			div.rd-navbar-brand {
+			  a.brand-name {
+				color : #000;
+				img {
+				  position   : relative;
+				  max-height : 3.125rem;
+				}
+			  }
+			}
+		  }
+		}
+		div.rd-navbar-main-outer {
+		  div.rd-navbar-main {
+			div.rd-navbar-main-element {
+			  div.rd-navbar-nav-wrap {
+				ul.rd-navbar-nav {
+				  li.rd-nav-item {
+					span.rd-navbar-submenu-toggle {
+					  &:before {
+						display : none;
+					  }
+					}
+				  }
+				}
+			  }
+			}
+		  }
+		}
+	  }
+	}
+  }
+  &.mobile {
+	div#ticker {
+	  position : relative;
+	  top      : 0;
+	  z-index  : 1;
+	}
+	oldMain {
+	  border      : 2px solid deeppink;
+	  padding-top : 3.5rem;
+	}
+  }
+}

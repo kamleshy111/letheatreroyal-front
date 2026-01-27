@@ -1,0 +1,63 @@
+/*
+* Navbar components
+*/
+
+// RD Navbar
+.rd-navbar {
+  display: none;
+  background: $rd-navbar-background;
+}
+
+// RD Navbar Toggle
+.rd-navbar-toggle,
+.rd-navbar-sidebar-toggle-custom {
+  @include make-toggle(
+          button-lines-cross-2,
+          $rd-navbar-min-line-height,
+          $rd-navbar-min-font-size,
+          #c0c0c0
+  );
+  text-align: right;
+  background-color: transparent;
+  border: none;
+  display: none;
+  line-height: 0;
+  padding-left: 5px;
+  padding-right: 5px; 
+  
+  &:focus{
+    outline: none;
+  }
+  
+  b {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    margin-right: 10px;
+    text-transform: uppercase;
+    color: $gray-dark;
+    letter-spacing: .05em;
+    display: none;
+  }
+}
+
+// RD Navbar Brand
+.rd-navbar-brand {
+  a{
+    display: inline-block;
+  }
+}
+
+.rd-navbar-top-panel {
+  .contact-info {
+    [href*='callto:'] {
+      font-size: 18px;
+    }
+  }
+}
+
+// RD Navbar Dropdown
+.rd-navbar-dropdown {
+  display: none;
+}

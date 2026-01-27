@@ -1,0 +1,43 @@
+@import "color";
+
+div.tab-content {
+  div.cta {
+	margin-top : 1rem;
+  }
+}
+
+div#schedule {
+  margin : 2rem 0;
+  div#dynamicTextText {
+	margin : 2rem 0;
+  }
+  h5.dayname {
+	margin : 1rem 0 .5rem;
+	span {
+	  color : $primary;
+	}
+  }
+  div.classe {
+	padding-bottom : 1rem;
+	border-bottom  : 1px solid #AAA;
+	margin-bottom  : 1rem;
+	color          : #000;
+	h6.className {
+	  font-weight : bold;
+	  color       : #000;
+	  span.complete {
+		margin-left : 1rem;
+		color       : #C00;
+	  }
+	}
+	div {
+	  label {
+		color        : #666;
+		margin-right : .3rem;
+		&:after {
+		  content : " :";
+		}
+	  }
+	}
+  }
+}

@@ -1,0 +1,20 @@
+{
+    "name": "theatre-royal/theatre-royal",
+    "description": "Le Théâtre Royal website",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "stripe/stripe-php": "^10.0",
+        "phpmailer/phpmailer": "^6.9",
+        "smarty/smarty": "^4.3",
+        "phpoffice/phpspreadsheet": "^1.29",
+        "setasign/fpdf": "^1.8",
+        "gilbitron/easycsrf": "^1.0",
+        "mobiledetect/mobiledetectlib": "^2.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "include/class/"
+        }
+    }
+}

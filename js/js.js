@@ -1,0 +1,180 @@
+$(document).ready(function () {
+    var page           = $("#page").val();
+    var status         = $("#status").val();
+    var tmp            = $("#grc").val().split("_");
+    var reCaptchaValid = tmp[0];
+    var reCaptchaScore = tmp[1];
+    $('[data-toggle="tooltip"]').tooltip();
+    replaceSvgToPath();
+    mobileAjust();
+    var reCaptchaScore = tmp[1];
+    if ((status != "dev") && (reCaptchaValid != "Y")) {
+        validCaptcha();
+    }
+    setTimeout(function () {
+        disableForm();
+        replaceSvgToPath();
+    }, 750);
+    setTimeout(function () {
+        replaceSvgToPath();
+    }, 1500);
+});
+
+$(document).on("submit", "form#footerCcontactFrm", function (e) {
+    e.preventDefault();
+    var form  = $("form#footerCcontactFrm");
+    var frmId = $(this).attr("id");
+    if (validForm("form#footerCcontactFrm")) {
+        $.ajax({
+            type   : "POST",
+            url    : "/ajax/contact.php",
+            data   : $("form#footerCcontactFrm").serialize(),
+            success: function (response) {
+                var data = JSON.parse(response);
+                if (data.result == "00") {
+                    $("#footerCcontactNotification").show();
+                    $("#footerCcontactNotification").html(data.message);
+                    $("form#footerCcontactFrm").remove();
+                }
+            }
+        });
+    }
+});
+
+function mobileAjust() {
+    var deviceType = $("#deviceType").val();
+    if (deviceType == "phone") {
+        $("div#ticker").css("position", "relative");
+        $("div#ticker").prependTo("main");
+    }
+}
+
+function validateEmail(email) {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+function replaceSvgToPath() {
+    jQuery("img.svg").each(function () {
+        var $img     = jQuery(this);
+        var imgID    = $img.attr("id");
+        var imgClass = $img.attr("class");
+        var imgURL   = $img.attr("src");
+        jQuery.get(imgURL, function (data) {
+            var $svg = jQuery(data).find("svg");
+            if (typeof imgID !== "undefined") {
+                $svg = $svg.attr("id", imgID);
+            }
+            if (typeof imgClass !== "undefined") {
+                $svg = $svg.attr("class", imgClass + " replaced-svg");
+            }
+            $svg = $svg.removeAttr("xmlns:a");
+            $img.replaceWith($svg);
+        }, "xml");
+    });
+}
+
+function getLongitudeLatitude() {
+    var postalCode = $("input[name='postalCode']").val();
+    var address    = $("input[name='address']").val();
+    var province   = $("input[name='province']").val();
+    var city       = $("input[name='city']").val();
+    if ((postalCode) && (address) && (province) && (city)) {
+        if (validatePostalCode(postalCode) == true) {
+            var geocoder = new google.maps.Geocoder();
+            geocoder.geocode({"address": address + "," + city + "," + province + "," + postalCode}, function (results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    var latitude  = results[0].geometry.location.lat();
+                    var longitude = results[0].geometry.location.lng();
+                    $("#latitude").val(latitude);
+                    $("#longitude").val(longitude);
+                }
+            });
+        } else {
+            $("#latitude").val("");
+            $("#longitude").val("");
+        }
+    }
+}
+
+function validatePostalCode(postalCode) {
+    var regCA = /[a-zA-Z][0-9][a-zA-Z](-| |)[0-9][a-zA-Z][0-9]/;
+    var regUS = /(^\d{5}$)|(^\d{5}-\d{4}$)/;
+    if (regCA.test(postalCode) || regUS.test(postalCode)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function validForm(frm) {
+    var validator = $(frm).validate({
+        highlight        : function (element) {
+            $(element).closest(".form-wrap").addClass("has-error");
+        },
+        unhighlight      : function (element) {
+            $(element).closest(".form-wrap").removeClass("has-error");
+        },
+        tooltip_options  : {
+            example4: {trigger: "focus"},
+            example5: {placement: "right", html: true}
+        },
+        errorElement     : "div",
+        errorClass       : "help-block",
+        submitHandler    : function (form) {
+            return true;
+        }, invalidHandler: function (form, validator) {
+            validator.focusInvalid();
+
+            return false;
+        }
+    });
+    return validator.form();
+}
+
+function scrollTo(id) {
+    $("html,body").animate({scrollTop: $("#" + id).offset().top}, "slow");
+}
+
+function validCaptcha() {
+    var page = $("#page").val();
+    grecaptcha.ready(function () {
+        grecaptcha.execute("6LcHSvspAAAAAJWY35Wy-5cfWGsSto5R4Sehciix", {action: page}).then(function (token) {
+            $.ajax({
+                type       : "POST",
+                url        : "/ajax/validCaptcha.php",
+                async      : false,
+                data       : {page: page, token: token},
+                dataType   : "json",
+                success    : function (data) {
+                    $("#grc").val(data.isValidUser + "_" + data.reCAPTCHAScore);
+                }, complete: function () {
+                    disableForm();
+                }
+            });
+        });
+    });
+}
+
+function disableForm() {
+    var tmp            = $("#grc").val().split("_");
+    var reCaptchaValid = tmp[0];
+    var reCaptchaScore = tmp[1];
+    if (reCaptchaValid == "N") {
+        $("button.button").prop("disabled", true);
+    }
+}
+
+$.fn.isOnScreen = function () {
+    var win         = $(window);
+    var viewport    = {
+        top : win.scrollTop(),
+        left: win.scrollLeft()
+    };
+    viewport.right  = viewport.left + win.width();
+    viewport.bottom = viewport.top + win.height();
+    var bounds      = this.offset();
+    bounds.right    = bounds.left + this.outerWidth();
+    bounds.bottom   = bounds.top + this.outerHeight();
+    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+};

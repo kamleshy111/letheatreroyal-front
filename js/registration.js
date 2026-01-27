@@ -1,0 +1,266 @@
+$(document).ready(function () {
+    var status = $("#status").val();
+    setTimeout(function () {
+        getCurrentForm();
+    }, 600);
+    if (status == "dev") {
+        /* */
+        $("form input[name=firstname]").val("Thomas");
+        $("form input[name=lastname]").val("Knap");
+        $("form input[name=birthdate]").val("2008-02-25");
+        $("form input[name=school]").val("des Rives");
+        $("form input[name=fatherFirstname]").val("Sébastien");
+        $("form input[name=fatherLastname]").val("Knap");
+        $("form input[name=motherFirstname]").val("Geneviève");
+        $("form input[name=motherLastname]").val("Timmons");
+        $("form input[name=email]").val("famille@knap.ca");
+        $("form input[name=phone]").val("5142252204");
+        $("form input[name=emergencyContact]").val("Patrick Knap");
+        $("form input[name=emergencyPhone]").val("5141234567");
+        $("form input[name=allergies]").val("Aucunes");
+        $("form select[name=heardAbout]").val("other");
+    }
+});
+
+$(document).on("submit", "form.regFrm", function (e) {
+    e.preventDefault();
+    var form   = $(this);
+    var idForm = $(form).attr("id");
+    var total  = $("#" + idForm + " input[name=total]").val();
+    processRegistration(idForm);
+});
+
+$(document).on("change", "select.heardAbout", function (e) {
+    e.preventDefault();
+    var heardAbout = $(this).val();
+    if (heardAbout) {
+        $("label.heardAbout").hide();
+    } else {
+        $("label.heardAbout").show();
+    }
+});
+
+$(document).on("change", "select.paymentMode", function (e) {
+    e.preventDefault();
+    var paymentMode = $(this).val();
+    var idForm      = $("#currentRegForm").val();
+    if (paymentMode) {
+        $("label.paymentMode").hide();
+    } else {
+        $("label.paymentMode").show();
+    }
+    loadCreditPayment(idForm);
+});
+
+$(document).on("change", "input.paymentOption", function (e) {
+    e.preventDefault();
+    var idForm = $("#currentRegForm").val();
+    setStripeAmount(idForm);
+});
+
+$(document).on("change", "ul.campChoice li input[type=checkbox]", function (e) {
+    e.preventDefault();
+    var currentItem = $(this);
+    var idForm      = $(currentItem).closest("form").attr("id");
+    getRegistrationTotal(idForm);
+    if (idForm == "registrationFrmDaycamp") {
+        activeDayCareOption();
+    }
+});
+
+$(document).on("click", "ul.nav-tabs li a", function (e) {
+    e.preventDefault();
+    setTimeout(function () {
+        getCurrentForm();
+    }, 750);
+});
+
+function processRegistration(idForm) {
+    var idCurrent = $("#" + idForm + " div.paymentMode input").attr("id");
+    $("#" + idCurrent).addClass("required");
+    var paymentMode   = $("#" + idForm + " select[name=paymentMode]").val();
+    var paymentOption = $("#" + idForm + " input[name=paymentOption]:checked").val();
+    if (paymentMode) {
+        $("#" + idCurrent).removeClass("required");
+    }
+    if ((paymentMode == "cc")) {
+        $("#bgProcess").show();
+        getToken(idForm);
+        setTimeout(function () {
+            $.ajax({
+                type    : "POST",
+                url     : "/ajax/stripe.php",
+                data    : $("form#" + idForm).serialize(),
+                success : function (response) {
+                    if (response == "00") {
+                        $("#card-errors").text("");
+                        saveRegistration(idForm);
+                    } else {
+                        $("#card-errors").text(response);
+                    }
+                }, error: function () {
+                    $("#bgProcess").hide();
+                }
+            });
+        }, 3000);
+    } else {
+        saveRegistration(idForm);
+    }
+}
+
+function saveRegistration(idForm) {
+    $("#bgProcess").show();
+    var paymentOption = $("#" + idForm + " input[name=paymentOption]:checked").val();
+    var firstname = $("form#" + idForm + " input[name='firstname']").val();
+    var lastname  = $("form#" + idForm + " input[name='lastname']").val();
+    $("#cardholderName").val(firstname + " " + lastname);
+    if (validForm($("form#" + idForm)) == true) {
+        $("#error").text("");
+        $.ajax({
+            type       : "POST",
+            url        : "/ajax/saveRegistration.php",
+            data       : $("form#" + idForm).serialize(),
+            success    : function (response) {
+                var data = JSON.parse(response);
+                if (data.result == "00") {
+                    scrollTo("page-top");
+                    saveStripeCard(data.customer.stripeCustomer);
+                    $("#confirmation").show();
+                    $("#confirmation").text(data.message);
+                    $("#regFrm").hide();
+                } else {
+                    $("#errorFrm").text(data[1]);
+                    $("#errorFrm").show();
+                }
+            }, complete: function () {
+                $("#bgProcess").hide();
+            }
+        });
+    } else {
+        $("#bgProcess").hide();
+        return false;
+    }
+}
+
+function getRegistrationTotal(idForm) {
+    $("#" + idForm + " div.paymentOption").hide();
+    $.ajax({
+        type   : "POST",
+        url    : "/ajax/setRegistrationTotal.php",
+        data   : $("form#" + idForm).serialize(),
+        success: function (response) {
+            var data = JSON.parse(response);
+            $("#" + idForm + " li.subTotalTxt span").text(data.subtotal.replace(",", "."));
+            $("#" + idForm + " input[name=subTotal]").val(data.subtotal.replace(",", "."));
+            $("#" + idForm + " li.gstTxt span").text(data.gst.replace(",", "."));
+            $("#" + idForm + " input[name=gst]").val(data.gst.replace(",", "."));
+            $("#" + idForm + " li.pstTxt span").text(data.pst.replace(",", "."));
+            $("#" + idForm + " input[name=pst]").val(data.pst.replace(",", "."));
+            $("#" + idForm + " li.totalTxt span").text(data.total.replace(",", "."));
+            $("#" + idForm + " input[name=total]").val(data.total.replace(",", "."));
+            $("#" + idForm + " input[name=monthlyPayment]").val(data.monthlyPayment.replace(",", "."));
+            $("#" + idForm + " label.fullPaymentLabel span").text(data.total.replace(",", "."));
+            $("#" + idForm + " label.monthlyPaymentLabel span.nbPayment").text(data.nbPayment);
+            $("#" + idForm + " label.monthlyPaymentLabel span.monthlyPayment").text(data.monthlyPayment.replace(",", "."));
+            $("#transactionAmount").val(data.transactionAmount);
+            setStripeAmount(idForm);
+            if (data.nbPayment > 1) {
+                $("#" + idForm + " div.paymentOption").show();
+            }
+        }
+    });
+}
+
+function getCurrentForm() {
+    $("div.creditPaymentForm").html("");
+    var t              = $("div.tab-content div.in form input[name=type]").val();
+    var currentRegForm = $("div.tab-content div.in form").attr("id");
+    $("#currentReg").val(t);
+    $("#currentRegForm").val(currentRegForm);
+    getRegistrationTotal(currentRegForm);
+    loadCreditPayment(currentRegForm);
+    if (t != "theaterschool") {
+        $("form#" + currentRegForm + " select[name=paymentMode]").val("cc");
+    }
+}
+
+function setStripeAmount(idForm) {
+    $("#" + idForm + " div.transactionSummary, #" + idForm + " div.creditForm").hide();
+    if ($("#" + idForm + " input[name=total]").val()) {
+        var paymentOption = $("#" + idForm + " input[name=paymentOption]:checked").val();
+        if (paymentOption == "monthly") {
+            var total = $("#" + idForm + " input[name=monthlyPayment]").val();
+        } else {
+            var total = $("#" + idForm + " input[name=total]").val();
+        }
+        total      = total.replace(",", ".");
+        total      = total.replace(/[^\d.-]/g, "");
+        total      = parseFloat(total).toFixed(2);
+        var amount = total.replace(".", "");
+        $("#" + idForm + " input[name=amount]").val(amount);
+        if (amount > 0) {
+            $("#" + idForm + " div.transactionSummary").show();
+            loadCreditPayment(idForm);
+        }
+    }
+}
+
+function validSubscribeForm() {
+    var validator = $("form[name=frm]").validate({
+        highlight      : function (element) {
+            $(element).closest(".form-group").addClass("has-error");
+        },
+        unhighlight    : function (element) {
+            $(element).closest(".form-group").removeClass("has-error");
+        },
+        tooltip_options: {
+            trigger  : "focus",
+            placement: "right", html: true
+        },
+        focusInvalid   : true,
+        errorElement   : "div",
+        errorClass     : "errorFrm",
+        submitHandler  : function (form) {
+            return true;
+        },
+        invalidHandler : function (form, validator) {
+            $("#bgProcess").hide();
+            for (var i = 0; i < validator.errorList.length; i++) {
+                //  console.log(validator.errorList[i]);
+            }
+            return false;
+        }
+    });
+    return validator.form();
+}
+
+function activeDayCareOption() {
+    jQuery("ul.campChoice li input[type=checkbox].daycamp").each(function () {
+        var current = jQuery(this);
+        if (current.is(":checked")) {
+            $("#daycampDC" + current.val()).prop("disabled", false);
+        } else {
+            $("#daycampDC" + current.val()).prop("checked", false);
+            $("#daycampDC" + current.val()).attr("disabled", "disabled");
+        }
+    });
+}
+
+function loadCreditPayment(idForm) {
+    var paymentMode = $("#" + idForm + " select.paymentMode").val();
+    var amount      = $("#" + idForm + " input[name=amount]").val();
+    if ((amount > 0) && (paymentMode == "cc")) {
+        $.ajax({
+            type   : "POST",
+            url    : "/ajax/loadCreditCardForm.php",
+            data   : {c: "1"},
+            success: function (response) {
+                $("#" + idForm + " div.creditPaymentForm").html(response);
+                $("#" + idForm + " div.creditForm").show();
+            }
+        });
+    } else {
+        $("#" + idForm + " div.creditForm").hide();
+        $("#" + idForm + " div.creditPaymentForm").html("");
+    }
+}

@@ -1,0 +1,250 @@
+/*
+*
+* Lists
+* --------------------------------------------------
+*/
+
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.list {
+  > li + li {
+    margin-top: 10px;
+  }
+}
+
+.list-xl {
+  > li + li {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .list-xl {
+    > li + li {
+      margin-top: 90px;
+    }
+  }
+}
+
+
+// List inline
+//
+
+.list-inline {
+  margin-left: -5px;
+  margin-right: -5px;
+
+  > li{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.list-inline-sm {
+  margin-left: -15px;
+  margin-right: -15px;
+  transform: translateY(-7px);
+  margin-bottom: -7px;
+
+  > li{
+    padding-top: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.list-unstyled {
+  li + li {
+    margin-top: 10px;
+  }
+}
+
+
+// Description Lists
+//
+
+dl {
+  margin: 0;
+}
+
+.list-desc {
+  display: table;
+  margin-left: -5px;
+  margin-right: -5px;
+  > * {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: 400;
+  }
+  dt {
+    color: $primary;
+  }
+}
+
+.list-desc-secondary {
+  dt {
+    color: $secondary;
+  }
+}
+
+
+// List terms
+//
+
+.list-terms {
+  margin-top: 35px;
+  dt + dd { margin-top: 5px; }
+  dd + dt { margin-top: 25px; }
+}
+
+
+// List index
+//
+
+// Index list
+//
+
+.index-list {
+  counter-reset: li;
+
+  > li {
+    .list-index-counter {
+      &:before {
+        content: counter(li, decimal-leading-zero);
+        counter-increment: li;
+      }
+    }
+  }
+}
+
+// Marked list
+//
+
+.marked-list {
+  text-align: left;
+  > li {
+    position: relative;
+    padding-left: 25px;
+    font: 400 14px/24px $font-family-base;
+    color: $gray-darker;
+
+    &:before {
+      position: absolute;
+      top: -1px;
+      left: 0;
+      content: '\f105';
+      font: 400 16px/24px $fa;
+      color: $gray-1;
+    }
+
+    a {
+      @include link(inherit, $primary);
+    }
+  }
+
+  > li + li {
+    margin-top: 10px;
+  }
+
+  &__mod-1 {
+    > li {
+      padding-bottom: 12px;
+      border-bottom: 1px solid $gray-6;
+      &:before {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.marked-list-gray-darker {
+  > li {
+    color: $gray-dark;
+  }
+}
+
+// Ordered list
+//
+.ordered-list {
+  counter-reset: li;
+  text-align: left;
+  li {
+    position: relative;
+    padding-left: 25px;
+    font: 400 14px/24px $font-family-base;
+    color: $gray-darker;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      width: 15px;
+      content: counter(li, decimal) '.';
+      counter-increment: li;
+      color: $gray-1;
+    }
+  }
+
+  li + li {
+    margin-top: 10px;
+  }
+}
+
+//nav footer
+
+.nav-list {
+  li {
+    &.active a {
+      color: $primary;
+    }
+  }
+}
+
+// list 3 columns
+
+.list-column-3 {
+  columns: 2;
+  column-gap: 30px;
+
+  @media (min-width: $screen-sm-min) {
+    columns: 3;
+    column-gap: 60px;
+  }
+}
+
+// List bars
+//
+.list-bars {
+  text-align: left;
+
+  li {
+    display: block;
+  }
+
+  > li + li {
+    margin-top: 25px;
+  }
+
+  * + .progress {
+    margin-top: 19px;
+  }
+}
+
+.list-bars-item-header {
+  color: $gray;
+  text-transform: uppercase;
+}
+
+.list-sitemap {
+  
+}

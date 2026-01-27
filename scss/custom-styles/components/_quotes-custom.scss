@@ -1,0 +1,550 @@
+//
+// Quotes custom
+// --------------------------------------------------
+
+// Blockquotes
+[class*='quote-'] {
+	font: inherit;
+	padding: 0;
+	border: 0;
+	q {
+		&:before,
+		&:after {
+			content: none;
+		}
+	}
+	cite {
+		font-family: $font-family-sec;
+		font-style: normal;
+	}
+	
+	small,
+	.small {
+		&:before {
+			display: none;
+		}
+	}
+}
+
+// default
+//------------------------------
+.quote-default {
+	p {
+		@media (min-width: $screen-xs-min) {
+			text-align: left;
+		}
+	}
+	
+	cite {
+		font-weight: 700;
+		font-size: 18px;
+		letter-spacing: .02em;
+		color: $gray-darker;
+	}
+	
+	.quote-body {
+		position: relative;
+		border-top: 1px solid $gray-lighter;
+		border-bottom: 1px solid $gray-lighter;
+		@media (min-width: $screen-xs-min) {
+			padding-left: 25px;
+		}
+		
+		.unit {
+			position: relative;
+			padding-top: 32px;
+			padding-bottom: 27px;
+			background-color: $body-bg;
+		}
+		
+		svg {
+			margin-top: 6px;
+			fill: $primary;
+		}
+		
+		&:before {
+			position: absolute;
+			top: calc(100% - 15px);
+			left: 80px;
+			content: "";
+			@include triangle(right, 19px, 30px, $gray-lighter)
+		}
+		&:after {
+			left: 81px;
+			position: absolute;
+			top: calc(100% - 17px);
+			content: "";
+			@include triangle(right, 20px, 30px, $white)
+		}
+	}
+	
+	.quote-footer {
+		text-align: left;
+		padding-left: 25px;
+	}
+	
+	// Offsets
+	* + .quote-footer {
+		margin-top: 15px;
+	}
+}
+
+.quote-default-title {
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 0.02em;
+	font-style: italic;
+	color: $gray-dark;
+}
+
+//quote modern
+//---------------------------
+
+.quote-modern {
+	max-width: 335px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	
+	.quote-header {
+		@include display-flex;
+		@include align-items(center);
+		
+		> div {
+			width: 120%;
+		}
+		
+		&:before,
+		&:after {
+			border-color: $gray;
+		}
+	}
+	
+	.quote-body {
+		margin-top: 15px;
+		padding: 0 10px 15px;
+		color: $gray-base;
+		
+		@media (min-width: $screen-lg-min) {
+			padding-bottom: 30px;
+		}
+		
+		* + p {
+			margin-top: 10px;
+		}
+	}
+	
+	.quote-footer {
+		position: relative;
+		padding: 30px 15px 15px;
+		border-top: 1px solid $gray;
+		color: $gray-light;
+		font-weight: 700;
+		
+		&:before {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			content: "";
+			display: inline-block;
+			@include triangle(bottom, 36px, 20px, $gray);
+		}
+		
+		&:after {
+			content: '';
+			position: absolute;
+			top: -1px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: inline-block;
+			@include triangle(bottom, 36px, 20px, $white);
+		}
+	}
+}
+
+//quote classic
+//---------------------------------
+
+.quote-classic {
+	.icon {
+		font-size: 22px;
+	}
+	p + p {
+		margin-top: 25px;
+		margin-bottom: 3px;
+	}
+}
+
+//quote secondary 
+//---------------------------------
+
+.quote-secondary {
+	position: relative;
+	padding: 18px 15px 20px;
+	text-align: center;
+	
+	q {
+		font: 300 24px/48px $font-family-sec;
+		color: $primary;
+	}
+	
+	&:before,
+	&:after {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		content: "";
+		width: 50%;
+		max-width: 250px;
+		height: 1px;
+		background: linear-gradient(to right, rgba($gray-base, 0), $gray-6 50%, rgba($gray-base, 0));
+	}
+	&:before {
+		top: 0;
+	}
+	&:after {
+		bottom: 0;
+	}
+}
+
+//quote box
+//---------------------------------
+
+.quote-box {
+	background-color: $white;
+	text-align: left;
+	padding: 25px 15px;
+	box-shadow: 0 1px 16px rgba($gray-base, .21);
+	
+}
+
+.quote-box-title {
+	font-size: 20px;
+	line-height: 28px;
+	font-family: $font-family-sec;
+	font-weight: 700;
+	margin-top: 10px;
+	letter-spacing: .05em;
+	@media (min-width: $screen-md-min){
+		font-size: 24px;
+		line-height: 33px;
+	}
+}
+
+.quote-box-body {
+	margin-top: 20px;
+}
+
+.quote-box-footer {
+	margin-top: 28px;
+}
+
+.quote-box-cite {
+	overflow: hidden;
+	line-height: 1.2;
+	
+	cite {
+		color: $primary;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-family: $font-family-base;
+	}
+	span {
+		font-style: italic;
+		font-size: 16px;
+		color: $gray-darker;
+		padding-left: 7px;
+		line-height: .8;
+	}
+}
+
+@media (min-width: $screen-sm-min) {
+	.quote-box {
+		padding: 35px 30px;
+	}
+	.quote-box-title {
+		margin-top: 0;
+		margin-left: 20px;
+	}
+	
+	.quote-box-header {
+		display: flex;
+		align-items: center;
+	}
+	
+	.quote-box-footer {
+		
+		&:before {
+			content: "";
+			display: inline-block;
+			width: 62px;
+			height: 1px;
+			background: $secondary;
+			margin-right: 27px;
+			margin-top: 8px;
+			float: left;
+		}
+	}
+}
+
+@media (min-width: $screen-lg-min) {
+	.quote-box {
+		padding: 60px 30px 65px 65px;
+	}
+	.quote-box-title {
+		margin-left: 35px;
+	}
+}
+
+.quote-box-mod-1 {
+	box-shadow: none;
+	width: 100%;
+	
+	.quote-box-footer {
+		&:before {
+			content: none;
+		}
+	}
+	.quote-box-header {
+		img {
+			width: auto;
+		}
+	}
+}
+
+// quote center
+//--------------------------
+
+.quote-center {
+	position: relative;
+	max-width: 630px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.quote-center-title {
+	h4 {
+		letter-spacing: .05em;
+	}
+}
+
+.quote-center-cite {
+	cite {
+		text-transform: uppercase;
+		color: $primary;
+		letter-spacing: .05em;
+		font-family: $font-family-sec;
+		font-weight: 500;
+	}
+	span {
+		padding-left: 7px;
+		font-style: italic;
+		font-size: 16px;
+		letter-spacing: .05em;
+		color: $gray-darker;
+	}
+	
+	* + & {
+		margin-top: 20px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.quote-center {
+		&:before,
+		&:after {
+			position: absolute;
+			top: 0;
+		}
+		
+		&:before {
+			content: "";
+			left: -75px;
+			width: 40px;
+			height: 36px;
+			background-image: url(../images/quotes-1.png);
+		}
+		&:after {
+			content: "";
+			right: -75px;
+			width: 40px;
+			height: 36px;
+			background-image: url(../images/quotes-2.png);
+		}
+	}
+}
+
+//quote-carousel-wrap
+//-------------------------
+
+.quote-carousel-wrap {
+	padding: 40px 15px;
+	box-shadow: 0 0 29px rgba($gray-base, .11);
+	background-color: $white;
+	
+	.slick-slider {
+	
+	}
+	
+	#child-carousel {
+		max-width: 630px;
+		margin-left: auto;
+		margin-right: auto;
+		
+		.slick-list {
+			padding: 10px 0;
+		}
+		.slick-slide {
+			pointer-events: none;
+			> * {
+				pointer-events: auto;
+			}
+			figure {
+				transform: scale3d(.8, .8, .8);
+				transition: $transition-base;
+			}
+		}
+		
+		.slick-slide figure:hover,
+		.slick-center figure {
+			transform: scale3d(1, 1, 1);
+			img {
+				box-shadow: 0 0 0 8px $gray-light;
+			}
+			
+		}
+	}
+	
+	figure {
+		display: inline-block;
+		padding: 8px;
+	}
+	
+	.bg-secondary-3 & {
+		background-color: #6a7c88;
+	}
+	
+	.bg-primary & {
+		background-color: #684876;
+	}
+}
+
+// vertical
+.quote-carousel-wrap-vertical {
+	* + & {
+		margin-top: 30px;
+	}
+	
+	figure {
+		display: inline-block;
+	}
+	
+	.carousel-parent {
+		margin-bottom: 0;
+		padding: 10px 0;
+		background-color: $secondary-4;
+		
+		.slick-slide {
+			//height: 450px !important;
+			
+			display: flex;
+			align-items: center;
+		}
+		.quote-box-body {
+			max-height: 170px;
+			overflow: hidden;
+		}
+	}
+	
+	#child-carousel {
+		padding-top: 25px;
+		padding-bottom: 25px;
+		background-color: $secondary-6;
+		
+		img {
+			max-width: 100px;
+			transition: 350ms;
+		}
+		
+		.slick-slide {
+			padding-top: 5px;
+			padding-bottom: 5px;
+			pointer-events: none;
+			
+			> * {
+				pointer-events: auto;
+			}
+		}
+	}
+	
+	@media (min-width: $screen-xs-min) {
+		.carousel-parent {
+			.slick-slide {
+				height: 380px !important;
+			}
+		}
+	}
+	@media (min-width: $screen-sm-min) {
+		display: flex;
+		align-items: stretch;
+		justify-content: space-between;
+		> * {
+			width: 30%;
+		}
+		
+		.carousel-parent {
+			width: 70%;
+			
+			.slick-slide {
+				height: 360px !important;
+			}
+		}
+		#child-carousel {
+			text-align: center;
+			.slick-slide {
+				&.slick-center,
+				&:hover {
+					img {
+						box-shadow: 0 0 0 4px $primary;
+					}
+				}
+			}
+		}
+	}
+	@media (min-width: $screen-lg-min) {
+		* + & {
+			margin-top: 50px;
+		}
+		.quote-box {
+			padding: 60px 20px 65px 25px;
+		}
+	}
+	@media (min-width: 1400px) {
+		.quote-box {
+			padding: 60px 40px 65px 65px;
+		}
+		
+		#child-carousel {
+			.slick-slide {
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+		}
+	}
+	@media (min-width: 1600px) {
+		.carousel-parent {
+			padding: 45px 0;
+		}
+		#child-carousel {
+			padding-top: 45px;
+			padding-bottom: 30px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.quote-carousel-wrap {
+		padding: 65px 15px 75px;
+	}
+}

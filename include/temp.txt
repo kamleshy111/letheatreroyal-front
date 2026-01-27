@@ -1,0 +1,40 @@
+2024-06-17 18:44:13
+Array
+(
+    [page] => theaterschool
+    [token] => 03AFcWeA6rp8Cau5mwg32wWCglNxnoC5KMcxzk2zyGwfJtmDaz6AMdNLUdNAJzIx_APh0qXMJVzDQFGL7sPqYqZu0sN7TNkV5CFJCB9hgeFKSY_cnhkg3ERPQIYCae5EOszxPCTTVlVJCqC49Mxgyp9iyoSFO0ZJwLSwTrLHXsrpEJ1qhVa56gj_6_3BspIbcVaPvnhrX1_gSmMYLXYEuPB7-QbXZU7cCOIjrngSnD4H14K7Gyecmwp6pnBiUQpkKYQYpwIHymg01jZvsdeOqk6EzKbHrPDRg6vIrwpHZbDs4mKp5eMZ7X-Ol3XHnk3agkwfOW4sF4hCpGpT8Z-94qpz6x0qMHGrlTYLbo762USdnlwoFFrSoKczIddq2d5fMPgmQ4EgA8NPpaul2MPcMdRgoib8csD843ucook0Ix5pky8pCizDMsUq0kOJms0GFrWgOZ8jEHgiuBJ1sn4awZMHUfUBH7tfgADkSHH614Bkn8XXYmTfxesl3l-8JPE8SmiXri4Ci_kSp8mOwBlrq8Qn8mWpAOCFF-a43QG7zHr9Ffng9lkR0cMmErdVcJdHta3rq6EMjDTTACGhn4z0uaaIu8RlVWhiN7z0De_ih84zVbjI-3X0hQNtbzww_iFqN1ejr7NUTKxVqkKXuMH2XT7Rc5jjnc3odIK3s3cS40Jfc0Ub83EUAEUoFVd5x2vhUrr-9tBObPGv2O8wav4lNYglGwHNQnsrjvBtG0X-c3c18oEsApexTRoLQ6qbDeq2Wd5K6Ycuwr8LlnHfio98S5t-C4vvua4j3QI5m7HzWEudrKgsSZGdfe1p-aLAzZw_9Ogyp4RrVmFpijkNIaxoyZBghJoCcz5tNYM7anRwkJo1HpQYvBSCcLwbb57oxNthCLqjL1dnN9tlq8k4aSbykhvfwxToSKwdKRsnyV0Azv1ziLArS2nVI1Gw7oL54RftWB6q9zqAh8ZhwMdkCxE9ED3gCtaLL4EZoAlVIuh-1KViMc7CECGV6nm98CYSPmYVnD0ZPpO52OzhNpZr5nRUSOdm1zCpEO_0kwglQO0Wf7k9vFqIS3IVveU3WwB1WsP1KCqNfI_8VK5gBR_eBBNB_S7ckDP5gpKLS3FnEqxKRCwdurPEOWTqgVVHGYAPAxfYJ33bCfnGWaGfnN99NV3o1WMx7T0Nj9-BgdnbyIvEpevXakIOw4cZNrjNSgXrJGb2E8TDqck9dfC1vhhWZ_N6qayaV--qw3qhUEk_p5NuUUQeqj4SH_hGTPKn982NtVo1qDrKswtw7-F6Wx-xwAmkH1npWWMZlNCNFizz5ottj98VfhCul0DdHE050Tx_SnDGB56SqfpkL4cR9yw6K59jc4DUca0ENRvcqFfR8yewP9smIv0qkDvqKdkXDkm-sJn-Moz9maBuwJxpvA2BHVH3Z3dJadQzb_usJ8MniU2Sie2kG-Z2_TYo6HvNDnbo_jxHIuW4dcptL9RePBbwpnabVTnW4f8ff-pBe_B4o6QStvZoLYSylyGZI41dHNZ33L1FrVg2a9YPO1fd4MRaq_oNUnzeb72WJuiG7EgkHdRsNg27GkB8MoGp1wHfr0wV7TaMPFvOBYj56_OiksP0qk7cKbSSLAkeP10apGS7YwJK4WB_7dAIJxzv21ztYvF_kImlKXBsHWDIFxnsRihFnbPRnLjYNTbLEeOxHPTfO_Pmhds-svX5tcJV3MqvEGA6cVDUFAPj-2fjm91j6p
+)
+
+Array
+(
+    [language] => fr
+    [selected] => 
+    [easycsrf_login] => MTcxODY0NzQ5MmUyYTMxZjk3OWE5MWU2ZTM4N2RiYjcxOGUwZWYxNzRkM2E1NDYxYmM3MzBlM2RkZTdjODMyNTdjMzFjMmVjYmU2NjhjMWZjNDVlNTVmZWMz
+    [nbLoginFailed] => 0
+    [expires] => 1718665453
+    [email] => seb@jaguar.tech
+    [name] => Sébastien Knap
+    [isLogged] => N
+    [idMember] => 
+    [documentationLogin] => 
+    [transactionData] => Array
+        (
+            [subtotal] => 0,00 $
+            [gst] => 0,00 $
+            [pst] => 0,00 $
+            [tax] => 0,00 $
+            [total] => 0,00 $
+            [transactionAmount] => 0.00
+            [firstDate] => 2034-06-17
+            [monthlySubTotal] => 0,00 $
+            [monthlyGst] => 0,00 $
+            [monthlyPst] => 0,00 $
+            [monthlyPayment] => 0,00 $
+            [nbPayment] => 1
+        )
+
+    [tempMonth] => 0
+    [isValidUser] => N
+    [reCAPTCHAScore] => 
+    [referer] => http://dev7.internal.jaguar.tech:2534/ecole-de-theatre/
+)

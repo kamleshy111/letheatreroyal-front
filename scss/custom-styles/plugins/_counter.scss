@@ -1,0 +1,55 @@
+/*
+*
+* Counter
+* --------------------------------------------------
+*/
+
+
+.counter {
+  font: 700 45px $font-family-sec;
+  line-height: 1;
+  text-transform: uppercase;
+
+  &__subtitle{}
+
+  &-wrap{}
+}
+
+.counter-box {
+  padding: 40px 15px 40px;
+  color: $gray-base;
+  text-align: center;
+}
+
+.counter-box-header {
+  font: 700 12px/24px $font-family-base;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+} 
+
+.counter-k {
+  &:after {
+    content: 'k';
+  }
+}
+
+.counter-plus {
+  &:after {
+    content: '+';
+  }
+}
+
+* + .counter-box-header {
+  margin-top: 5px;
+}
+
+
+@media (min-width: $screen-lg-min) {
+  .counter {
+    font-size: 70px;
+  }
+
+  .counter-box-header {
+    font-size: 14px;
+  }
+}

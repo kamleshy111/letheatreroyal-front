@@ -1,0 +1,92 @@
+.rd-navbar-default-with-top-panel {
+
+  // brand
+  .mobile-brand,
+  .fullwidth-brand {
+    display: none;
+  }
+  //-----------
+  // Top panel    
+  //-----------
+  
+  // Contact info 
+  .contact-info {
+    font-size: 18px;
+    
+    a {
+      @include link($gray-darker, $primary);
+    }
+  }
+  
+  
+  // fixed
+  &.rd-navbar-fixed {
+    .mobile-brand {
+      display: block; 
+    }
+  }
+  
+  // static & fullwidth
+  &.rd-navbar-static,
+  &.rd-navbar-fullwidth {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .fullwidth-brand {
+      display: block;
+    }
+    
+    .rd-navbar-top-panel-inner,
+    .rd-navbar-inner {
+      max-width: 940px;
+      padding-left: 0;
+      padding-right: 0;
+      @media (min-width: $screen-lg-min) {
+        max-width: 1770px;
+      }
+    }
+
+    .rd-navbar-inner {
+      border-top: 1px solid $gray-lighter;
+      border-bottom: 1px solid $gray-lighter;
+    }
+
+    // Gray background navigation
+    &.rd-navbar-default-with-top-panel-gray-nav {
+      .rd-navbar-inner {
+        border-top: 0;
+        border-bottom: 0;
+        &:before{
+          position: absolute;
+          width: 100vw;
+          top: 0;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          content: "";
+          display: inline-block;
+          background-color: $gray-light;
+        }
+      }
+    }
+
+    // RD Navbar States
+    &.rd-navbar--is-stuck,
+    &.rd-navbar--is-clone {
+      
+    }
+
+    @media (min-width: $screen-lg-min) {
+      .rd-navbar-top-panel {
+        padding-top: 30px;
+        padding-bottom: 26px;
+
+        .button-bold {
+          font-size: 18px;
+          font-weight: 700;
+          letter-spacing: .05em;
+        }
+      }
+    }
+  }
+}

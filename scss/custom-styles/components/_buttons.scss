@@ -1,0 +1,427 @@
+/*
+*
+* Buttons
+* --------------------------------------------------
+*/
+
+// Button General Styles
+
+.button {
+  display: inline-block;
+  position: relative;
+  // btn-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius)
+  @include btn-size(13px, 38px, 16px, 20px, 4px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-style: solid;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  user-select: none;
+  transition: 250ms all ease-in-out;
+  font-family: $font-family-sec;
+  font-weight: 500;
+
+  border-width: 2px;
+
+  &:focus,
+  &:active,
+  &:active:focus {
+    outline: none;
+  }
+
+  .caret {
+    margin-left: 8px;
+  }
+
+  &.button-effect-ujarak {
+    span {
+      position: relative;
+      z-index: 2;
+    }
+
+    &:before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: -3px;
+      bottom: -3px;
+      left: 10%;
+      right: 10%;
+      transition: $transition-base;
+      opacity: 0;
+      z-index: 0;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: -3px;
+      bottom: -3px;
+      left: -3px;
+      right: -3px;
+      z-index: 1;
+      transition: $transition-base;
+    }
+
+    &:hover {
+      background: transparent;
+      &:before {
+        opacity: 1;
+        left: -1px;
+        right: -1px;
+      }
+      &:after {
+        opacity: 0;
+        left: 10%;
+        right: 10%;
+      }
+    }
+  }
+
+  &[class*='-outline'] {
+    @include btn-size(11px, 38px, 16px, 20px, 0);
+  }
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+// Appearance style
+// --------------------------------------------------
+
+.button-default {
+  @include btn-variant($gray-darker, transparent, $gray, $white, $gray-darker, $gray-darker);
+}
+.button-transparent {
+  @include btn-variant($gray-darker, transparent, transparent, $white, $gray-darker, $gray-darker);
+}
+
+.button-default-outline {
+  border-width: 3px;
+  @include btn-variant($gray-darker, transparent, rgba($gray-base, .2), $white, $gray-darker, $gray-darker);
+}
+
+.button-gray-dark-outline {
+  border-width: 3px;
+  @include btn-variant($gray-darker, transparent, $gray-darker, $white, $gray-darker, $gray-darker);
+  
+  &.button-effect-ujarak {
+    border-width: 0;
+    @include btn-size(14px, 38px, 16px, 20px, 0);
+    &:before {
+      background-color: $gray-darker;
+    }
+
+    &:after {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border: 3px solid $gray-darker;
+    }
+
+    &:hover {
+      background: transparent;
+    }
+  }
+}
+
+
+.button-primary-outline {
+  border-width: 3px;
+  @include btn-variant($gray-darker, transparent, $primary, $white, $primary, $primary);
+  
+  &.button-effect-ujarak {
+    border-width: 0;
+    @include btn-size(14px, 38px, 16px, 20px, 0);
+    &:before {
+      background-color: $primary;
+    }
+    
+    &:after {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border: 3px solid $primary;
+    }
+    
+    &:focus,
+    &:active {
+      background: $primary;
+      border-color: $primary;
+      &:after{
+        border: 0;
+      }
+    }
+    
+    &:hover {
+      background: transparent;
+    }
+  }
+  &.button-lg.button-square {
+    border-radius: 0;
+  }
+}
+
+.button-secondary-outline {
+  border-width: 3px;
+  @include btn-variant($primary, transparent, $gray-6, $white, $primary, $primary);
+
+  &.button-effect-ujarak {
+    border-width: 0;
+    @include btn-size(14px, 38px, 16px, 20px, 0);
+    &:before {
+      background-color: $primary;
+    }
+
+    &:after {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border: 3px solid $secondary;
+    }
+    
+    &:focus,
+    &:active {
+      background: $primary;
+      border-color: $primary;
+       &:after{
+         border: 0;
+       }
+    }
+
+    &:hover {
+      background: transparent;
+    }
+  }
+  &.button-lg.button-square {
+    border-radius: 0;
+  }
+}
+
+.button-gray-6-outline {
+  border-width: 2px;
+  @include btn-variant($secondary, transparent, $gray-6, $white, $primary, $primary);
+
+  &.button-effect-ujarak {
+    border-width: 0;
+    @include btn-size(14px, 38px, 16px, 20px, 0);
+    &:before {
+      background-color: $primary;
+    }
+
+    &:after {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border: 2px solid $gray-6;
+    }
+    
+    &:focus,
+    &:active {
+      background: $primary;
+      border-color: $primary;
+       &:after{
+         border: 0;
+       }
+    }
+
+    &:hover {
+      background: transparent;
+    }
+  }
+  &.button-lg.button-square {
+    border-radius: 0;
+  }
+}
+.button-primary {
+  @include btn-variant($white, $primary, $primary, $primary, transparent, $primary);
+
+  &.button-effect-ujarak {
+    &:before {
+      background-color: $secondary;
+    }
+
+    &:after {
+      background-color: $primary;
+    }
+
+    &:hover {
+      background: transparent;
+    }
+  }
+}
+.button-primary-2 {
+  @include btn-variant($white, $primary, $primary, $white, $secondary, $secondary);
+
+  &.button-effect-ujarak {
+    &:before {
+      background-color: $secondary;
+    }
+
+    &:after {
+      background-color: $primary;
+    }
+
+    &:hover {
+      background: transparent;
+    }
+  }
+}
+
+.button-secondary {
+  @include btn-variant($white, $secondary, $secondary, $white, $primary, $primary);
+
+  &.button-effect-ujarak {
+    &:before {
+      background-color: $primary;
+    }
+
+    &:after {
+      background-color: $secondary;
+    }
+
+    &:hover {
+      background: transparent;
+    }
+  }
+}
+
+.button-steel-blue {
+  @include btn-variant($white, #547ABB, #547ABB, $white, darken(#547ABB, 10%), darken(#547ABB, 10%));
+}
+
+.button-cerulean {
+  @include btn-variant($white, #00bbf2, #00bbf2, $white, darken(#00bbf2, 5%), darken(#00bbf2, 5%));
+}
+
+.button-mandy {
+  @include btn-variant($white, #e75854, #e75854, $white, darken(#e75854, 10%), darken(#e75854, 10%));
+}
+
+// Btn with shadow
+.button-shadow {
+  box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.15);
+
+  &:hover {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Button Sizes
+// --------------------------------------------------
+
+.button-xs {
+  // btn-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius)
+  @include btn-size(12px, 30px, 14px, 18px, 3px);
+
+  &[class*='-outline'] {
+    @include btn-size(10px, 15px, 14px, 18px, 3px);
+    padding-bottom: 7px;
+  }
+}
+
+.button-sm {
+  // btn-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius)
+  @include btn-size(13px, 22px, 14px, 16px, 3px);
+  min-width: auto;
+
+  &[class*='-outline'] {
+    @include btn-size(13px, 22px, 14px, 16px, 3px);
+  }
+}
+
+.button-lg {
+  // btn-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius)
+  @include btn-size(19px, 65px, 18px, 20px, 3px);
+
+  &[class*='-outline'] {
+    @include btn-size(19px, 65px, 18px, 20px, 3px);
+  }
+}
+
+.button-xl {
+  // btn-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius)
+  @include btn-size(25px, 70px, 24px, 24px, 3px);
+
+  &[class*='-outline'] {
+    @include btn-size(25px, 70px, 24px, 24px, 3px);
+  }
+}
+
+// Button Shapes
+// --------------------------------------------------
+
+.button-circle {
+  border-radius: 30px;
+}
+
+.button-round {
+  border-radius: 8px;
+}
+
+.button-square {
+  border-radius: 0;
+}
+
+.button-ellipse {
+  &-md {
+    border-radius: 5px;
+  }
+
+  &-lg {
+    border-radius: 10px;
+  }
+}
+
+// Button Icon styles
+// --------------------------------------------------
+
+.button {
+  &.button-icon {
+    padding-left: 35px;
+    padding-right: 35px;
+
+    .icon {
+      line-height: inherit;
+      vertical-align: middle;
+      transition: 0s;
+    }
+
+    &-left {
+      .icon {
+        float: left;
+        padding-right: 10px;
+      }
+    }
+
+    &-right {
+      .icon {
+        float: right;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+.page {
+  .button-tags {
+    font-size: 12px;
+    border-width: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+
+.button-link {
+  font: 700 16px $font-family-sec;
+  color: $primary;
+}
