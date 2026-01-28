@@ -376,7 +376,8 @@ class Registration {
 				$mail->Encoding    = "base64";
 				$mail->SetFrom("info@letheatreroyal.com", CUSTOMER_NAME);
 				if (STATUS == "dev") {
-					$mail->AddAddress("seb@jaguar.tech", $registration->childrenName);
+					$mail->AddAddress("jskrta@gmail.com", $registration->childrenName);
+					$mail->AddCC("kamleshy111@gmail.com", "Agence Marie-Ève Lafond");
 				} else {
 					$mail->AddAddress($registration->email, $registration->childrenName);
 					if ($registration->type == "theaterschool") {
@@ -386,6 +387,7 @@ class Registration {
 						$mail->AddCC("beatrice@letheatreroyal.com", CUSTOMER_NAME);
 					}
 					$mail->AddCC("info@agencelafond.com", "Agence Marie-Ève Lafond");
+					$mail->AddCC("beatricetasse@hotmail.com", "Agence Marie-Ève Lafond");
 				}
 				$mail->CharSet = "UTF-8";
 				$mail->Subject = $registration->description;
