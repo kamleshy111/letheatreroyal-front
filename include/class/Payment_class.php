@@ -351,6 +351,18 @@ class Payment {
 
 	public function stripePayment() {
 		\Stripe\Stripe::setApiKey(STRIPE_SK);
+		$errorMessageLst = array(
+			"incorrect_number"     => "Le numéro de la carte est invalide.",
+			"invalid_number"       => "Le numéro de la carte est invalide.",
+			"invalid_expiry_month" => "Le mois de la date d'expiration est invalide.",
+			"invalid_expiry_year"  => "L'année de la date d'expiration est invalide.",
+			"invalid_cvc"          => "Le code de sécurité est invalide.",
+			"expired_card"         => "La carte est expirée.",
+			"incorrect_cvc"        => "Le code de sécurité est invalide.",
+			"card_declined"        => "La carte a été rejetée",
+			"processing_error"     => "Une erreur est survenue durant le traitement de la carte.",
+			"rate_limit"           => "Trop de requêtes. Veuillez réessayer dans un instant."
+		);
 		try {
 			$result                              = \Stripe\Charge::create(array("amount" => intval($this->amount), "currency" => "cad", "source" => $this->stripeToken, "capture" => $this->capture, "description" => $this->stripeDescription));
 			$_SESSION["transactionConfirmation"] = $result->id;
@@ -366,28 +378,23 @@ class Payment {
 			$token = \Stripe\Token::retrieve($this->stripeToken, []);
 
 			return array("status" => "00", "result" => $result);
-		} catch (\Stripe\Error\Card $e) {
-			$errorMessageLst = array(
-				"incorrect_number"     => "Le numéro de la carte est invalide.",
-				"invalid_number"       => "Le numéro de la carte est invalide.",
-				"invalid_expiry_month" => "Le mois de la date d'expiration est invalide.",
-				"invalid_expiry_year"  => "L'année de la date d'expiration est invalide.",
-				"invalid_cvc"          => "Le code de sécurité est invalide.",
-				"expired_card"         => "La carte est expirée.",
-				"incorrect_cvc"        => "Le code de sécurité est invalide.",
-				"card_declined"        => "La carte a été rejetée",
-				"processing_error"     => "Une erreur est survenue durant le traitement de la carte.",
-				"rate_limit"           => "An error occurred due to requests hitting the API too quickly. Please let us know if you're consistently running into this error."
-			);
-			$body            = json_decode($e);
-			$err             = $body["error"];
-
-			return $err["message"];
-		} catch (Exception $e) {
-			$body = json_decode($e);
-			$err  = $body["error"];
-
-			return $err["message"];
+		} catch (\Throwable $e) {
+			// Support both old (\Stripe\Error\Card) and new (\Stripe\Exception\CardException) SDK
+			$code    = null;
+			$message = $e->getMessage();
+			if (method_exists($e, "getJsonBody") && is_array($e->getJsonBody())) {
+				$body = $e->getJsonBody();
+				if (isset($body["error"]["code"]) && isset($errorMessageLst[$body["error"]["code"]])) {
+					return $errorMessageLst[$body["error"]["code"]];
+				}
+				if (isset($body["error"]["message"])) {
+					return $body["error"]["message"];
+				}
+			}
+			if ($message) {
+				return $message;
+			}
+			return "Une erreur est survenue lors du traitement de la carte.";
 		}
 	}
 

@@ -107,4 +107,23 @@ section#registration {
 	  }
 	}
   }
+  // Card and form error messages
+  #card-errors,
+  #errorFrm {
+	&:not(:empty) {
+	  display   : block;
+	  margin    : 0.75rem 0;
+	  padding   : 0.75rem 1rem;
+	  color     : #b71c1c;
+	  font-size : 0.95rem;
+	  font-weight : 600;
+	  background : #ffebee;
+	  border     : 1px solid #ef5350;
+	  border-radius : 4px;
+	}
+  }
+  #card-errors:empty,
+  #errorFrm:empty {
+	display : none;
+  }
 }

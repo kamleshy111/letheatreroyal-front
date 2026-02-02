@@ -97,6 +97,7 @@ function processRegistration(idForm) {
                         saveRegistration(idForm);
                     } else {
                         $("#card-errors").text(response);
+                        $("#bgProcess").hide();
                     }
                 }, error: function () {
                     $("#bgProcess").hide();
